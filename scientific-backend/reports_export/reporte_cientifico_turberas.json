@@ -1,0 +1,302 @@
+{
+    "metadata": {
+        "model_name": "XGBoost",
+        "model_type": "XGBoostModelWrapper",
+        "status": "MODELO SELECCIONADO Y OPTIMIZADO",
+        "selection_date": "2026-09-28 17:13:11",
+        "dataset_version": "Chirimayo_v2.0_PNDA_Real",
+        "features_used": [
+            "wtd",
+            "soil_temp",
+            "precip_mm",
+            "ditch_blocking_ratio",
+            "grazing_reduction",
+            "revegetation_ha",
+            "ndvi",
+            "bulk_density",
+            "organic_matter",
+            "ph"
+        ],
+        "calibration_method": "Platt Scaling (Sigmoid)",
+        "hyperparameter_tuning_method": "RandomizedSearchCV (5-Fold CV)",
+        "composite_rank_score": 0.7593,
+        "hyperparameters": {
+            "n_estimators": 150,
+            "max_depth": 7,
+            "learning_rate": 0.1
+        }
+    },
+    "metrics": {
+        "f1": 0.7348,
+        "f1_ci95": "[0.6471 - 0.8225]",
+        "accuracy": 0.92,
+        "precision": 0.7933,
+        "recall": 0.71,
+        "roc_auc": 0.9626,
+        "mae": 1.0209,
+        "rmse": 1.3159,
+        "r2": 0.9443,
+        "f1_std": 0.1225,
+        "brier_score": 0.0012,
+        "ece": 0.079
+    },
+    "statistical_tests": {
+        "friedman_test": {
+            "test": "Friedman Test",
+            "statistic": 12.1768,
+            "p_value": 0.016083868646395345,
+            "alpha": 0.05,
+            "is_significant": true,
+            "interpretation": "Existe una diferencia estadísticamente significativa en el rendimiento de los modelos (p = 1.6084e-02 < 0.05). Se justifica la aplicación de pruebas post-hoc (Nemenyi / Wilcoxon)."
+        },
+        "posthoc_wilcoxon_nemenyi": [
+            {
+                "model_a": "Random Forest",
+                "model_b": "SVM",
+                "statistic": 7.0,
+                "p_value_raw": 0.1484375,
+                "mean_difference": 0.0712,
+                "effect_size_cohen_d": 0.505,
+                "p_value_adjusted": 0.742188,
+                "significant": false
+            },
+            {
+                "model_a": "Random Forest",
+                "model_b": "XGBoost",
+                "statistic": 15.0,
+                "p_value_raw": 0.7421875,
+                "mean_difference": 0.0166,
+                "effect_size_cohen_d": 0.1364,
+                "p_value_adjusted": 1.0,
+                "significant": false
+            },
+            {
+                "model_a": "Random Forest",
+                "model_b": "Random Forest + MLP (Híbrido)",
+                "statistic": 1.0,
+                "p_value_raw": 0.00390625,
+                "mean_difference": 0.2055,
+                "effect_size_cohen_d": 1.4591,
+                "p_value_adjusted": 0.039062,
+                "significant": true
+            },
+            {
+                "model_a": "Random Forest",
+                "model_b": "SVM + MLP (Híbrido)",
+                "statistic": 17.0,
+                "p_value_raw": 0.5703125,
+                "mean_difference": 0.026,
+                "effect_size_cohen_d": 0.1922,
+                "p_value_adjusted": 1.0,
+                "significant": false
+            },
+            {
+                "model_a": "SVM",
+                "model_b": "XGBoost",
+                "statistic": 6.0,
+                "p_value_raw": 0.21875,
+                "mean_difference": -0.0546,
+                "effect_size_cohen_d": -0.3852,
+                "p_value_adjusted": 0.875,
+                "significant": false
+            },
+            {
+                "model_a": "SVM",
+                "model_b": "Random Forest + MLP (Híbrido)",
+                "statistic": 3.0,
+                "p_value_raw": 0.009765625,
+                "mean_difference": 0.1343,
+                "effect_size_cohen_d": 0.8465,
+                "p_value_adjusted": 0.078125,
+                "significant": false
+            },
+            {
+                "model_a": "SVM",
+                "model_b": "SVM + MLP (Híbrido)",
+                "statistic": 5.0,
+                "p_value_raw": 0.140625,
+                "mean_difference": -0.0452,
+                "effect_size_cohen_d": -0.2938,
+                "p_value_adjusted": 0.84375,
+                "significant": false
+            },
+            {
+                "model_a": "XGBoost",
+                "model_b": "Random Forest + MLP (Híbrido)",
+                "statistic": 4.0,
+                "p_value_raw": 0.013671875,
+                "mean_difference": 0.1889,
+                "effect_size_cohen_d": 1.3337,
+                "p_value_adjusted": 0.095703,
+                "significant": false
+            },
+            {
+                "model_a": "XGBoost",
+                "model_b": "SVM + MLP (Híbrido)",
+                "statistic": 12.5,
+                "p_value_raw": 0.859375,
+                "mean_difference": 0.0094,
+                "effect_size_cohen_d": 0.0693,
+                "p_value_adjusted": 0.859375,
+                "significant": false
+            },
+            {
+                "model_a": "Random Forest + MLP (Híbrido)",
+                "model_b": "SVM + MLP (Híbrido)",
+                "statistic": 1.0,
+                "p_value_raw": 0.00390625,
+                "mean_difference": -0.1794,
+                "effect_size_cohen_d": -1.1678,
+                "p_value_adjusted": 0.035156,
+                "significant": true
+            }
+        ],
+        "mcnemar_test_winner_vs_runnerup": {
+            "test": "McNemar Test",
+            "model_a": "XGBoost",
+            "model_b": "Random Forest",
+            "contingency_table": [
+                [
+                    313,
+                    9
+                ],
+                [
+                    7,
+                    21
+                ]
+            ],
+            "statistic": 0.0625,
+            "p_value": 0.802587,
+            "interpretation": "No se detectó diferencia significativa en los aciertos/errores de XGBoost vs Random Forest (p = 0.8026)."
+        },
+        "ranking_final": [
+            {
+                "rank": 1,
+                "model": "XGBoost",
+                "score": 0.7593
+            },
+            {
+                "rank": 2,
+                "model": "Random Forest",
+                "score": 0.7543
+            },
+            {
+                "rank": 3,
+                "model": "SVM",
+                "score": 0.7273
+            },
+            {
+                "rank": 4,
+                "model": "Random Forest + MLP (Híbrido)",
+                "score": 0.6578
+            },
+            {
+                "rank": 5,
+                "model": "SVM + MLP (Híbrido)",
+                "score": 0.5544
+            }
+        ]
+    },
+    "hyperparameter_tuning": {
+        "Random Forest": {
+            "method": "RandomizedSearchCV (5-Fold CV Interna)",
+            "scoring": "f1",
+            "search_space": {
+                "n_estimators": "[50, 100, 150, 200]",
+                "max_depth": "[4, 6, 8, 12, None]"
+            },
+            "best_hyperparameters": {
+                "n_estimators": 50,
+                "max_depth": 4
+            },
+            "best_internal_cv_f1": 0.7419
+        },
+        "SVM": {
+            "method": "RandomizedSearchCV (5-Fold CV Interna)",
+            "scoring": "f1",
+            "search_space": {
+                "C": "[0.5, 1.0, 1.5, 2.0, 5.0]",
+                "kernel": "['rbf', 'linear']"
+            },
+            "best_hyperparameters": {
+                "kernel": "rbf",
+                "C": 5.0
+            },
+            "best_internal_cv_f1": 0.7381
+        },
+        "XGBoost": {
+            "method": "RandomizedSearchCV (5-Fold CV Interna)",
+            "scoring": "f1",
+            "search_space": {
+                "n_estimators": "[50, 80, 120, 150]",
+                "max_depth": "[3, 5, 7]",
+                "learning_rate": "[0.01, 0.05, 0.1]"
+            },
+            "best_hyperparameters": {
+                "n_estimators": 150,
+                "max_depth": 7,
+                "learning_rate": 0.1
+            },
+            "best_internal_cv_f1": 0.7216
+        },
+        "Random Forest + MLP (Híbrido)": {
+            "method": "RandomizedSearchCV (5-Fold CV Interna)",
+            "scoring": "f1",
+            "search_space": {
+                "rf_n_estimators": "[50, 100, 150]",
+                "mlp_hidden_layer_sizes": "[(32, 16), (64, 32)]"
+            },
+            "best_hyperparameters": {
+                "rf_n_estimators": 50,
+                "mlp_hidden_layer_sizes": [
+                    32,
+                    16
+                ]
+            },
+            "best_internal_cv_f1": 0.5484
+        },
+        "SVM + MLP (Híbrido)": {
+            "method": "RandomizedSearchCV (5-Fold CV Interna)",
+            "scoring": "f1",
+            "search_space": {
+                "svm_C": "[0.8, 1.2, 2.0]",
+                "mlp_hidden_layer_sizes": "[(32, 16), (64, 32)]"
+            },
+            "best_hyperparameters": {
+                "svm_C": 0.8,
+                "mlp_hidden_layer_sizes": [
+                    32,
+                    16
+                ]
+            },
+            "best_internal_cv_f1": 0.7223
+        }
+    },
+    "rankings": [
+        {
+            "rank": 1,
+            "model": "XGBoost",
+            "score": 0.7593
+        },
+        {
+            "rank": 2,
+            "model": "Random Forest",
+            "score": 0.7543
+        },
+        {
+            "rank": 3,
+            "model": "SVM",
+            "score": 0.7273
+        },
+        {
+            "rank": 4,
+            "model": "Random Forest + MLP (Híbrido)",
+            "score": 0.6578
+        },
+        {
+            "rank": 5,
+            "model": "SVM + MLP (Híbrido)",
+            "score": 0.5544
+        }
+    ]
+}

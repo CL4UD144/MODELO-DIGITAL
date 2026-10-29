@@ -1,0 +1,6 @@
+rank,model,score
+1,XGBoost,0.7593
+2,Random Forest,0.7543
+3,SVM,0.7273
+4,Random Forest + MLP (Híbrido),0.6578
+5,SVM + MLP (Híbrido),0.5544

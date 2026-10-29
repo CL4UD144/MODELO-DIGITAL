@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+/* Design System Theme Tokens */
+:root, html[data-theme="light"], html.light {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --surface: #ffffff;
+  --surface-elevated: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --border-subtle: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --accent-primary: #059669;
+  --accent-secondary: #0284c7;
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
+  --hover-bg: #f1f5f9;
+  --glass-panel-bg: rgba(255, 255, 255, 0.88);
+  --glass-panel-border: rgba(203, 213, 225, 0.9);
+  --glass-glow-bg: rgba(255, 255, 255, 0.94);
+  --glass-glow-border: rgba(16, 185, 129, 0.35);
+  --grid-line-color: rgba(148, 163, 184, 0.15);
+  --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+html[data-theme="dark"], html.dark {
+  --bg-primary: #020617;
+  --bg-secondary: #0f172a;
+  --surface: #0f172a;
+  --surface-elevated: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-subtle: #1e293b;
+  --border-strong: #334155;
+  --accent-primary: #10b981;
+  --accent-secondary: #38bdf8;
+  --input-bg: #0f172a;
+  --input-border: #334155;
+  --hover-bg: #1e293b;
+  --glass-panel-bg: rgba(15, 23, 42, 0.85);
+  --glass-panel-border: rgba(51, 65, 85, 0.8);
+  --glass-glow-bg: rgba(15, 23, 42, 0.92);
+  --glass-glow-border: rgba(16, 185, 129, 0.35);
+  --grid-line-color: rgba(51, 65, 85, 0.15);
+  --card-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+}
+
+@layer base {
+  * {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Sleek custom scrollbars for Light & Dark modes */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+  }
+}
+
+/* Glassmorphism and Theme Utilities */
+.glass-panel {
+  background: var(--glass-panel-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-panel-border);
+  box-shadow: var(--card-shadow);
+}
+
+.glass-panel-glow {
+  background: var(--glass-glow-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-glow-border);
+  box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.2);
+}
+
+.hud-border {
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--card-shadow);
+}
+
+.tech-grid-bg {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, var(--grid-line-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line-color) 1px, transparent 1px);
+}

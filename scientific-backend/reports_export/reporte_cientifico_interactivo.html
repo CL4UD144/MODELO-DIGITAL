@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Científico Oficial — Gemelo Digital Chirimayo</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #0f172a;
+            line-height: 1.6;
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1, h2, h3 { color: #0f172a; }
+        .header {
+            border-bottom: 2px solid #10b981;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        .badge {
+            background: #ecfdf5;
+            color: #047857;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            display: inline-block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th {
+            background: #f8fafc;
+            color: #1e293b;
+            text-align: left;
+            padding: 12px;
+            font-size: 0.9rem;
+            border-bottom: 2px solid #cbd5e1;
+        }
+        td {
+            padding: 10px 12px;
+            font-size: 0.9rem;
+        }
+        .interp-box {
+            background: #f8fafc;
+            border-left: 4px solid #10b981;
+            border: 1px solid #e2e8f0;
+            border-left-width: 4px;
+            border-radius: 6px;
+            padding: 16px 20px;
+            margin: 15px 0 35px 0;
+            font-size: 0.88rem;
+        }
+        .interp-title {
+            font-weight: bold;
+            color: #065f46;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.8rem;
+            color: #64748b;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="badge">Gemelo Digital Chirimayo • CRISP-DM Fase 5</span>
+        <h1 style="margin-top: 10px; margin-bottom: 5px;">Reporte Científico Oficial e Interpretabilidad Integral</h1>
+        <p style="color: #64748b; margin: 0;">Modelo Publicado: <strong>XGBoost</strong> | Fecha: 2026-10-26 17:17:36 | Ubicación: Microcuenca Chirimayo, Cajamarca</p>
+    </div>
+
+    <h2>1. Métricas de Rendimiento del Modelo Predictivo</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Métrica</th>
+                <th>Valor Observado</th>
+                <th>Criterio de Validación</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>R² Regresión (Flujo Neto)</strong></td>
+                <td>0.9443</td>
+                <td>&gt; 0.85</td>
+                <td style="color: #059669; font-weight: bold;">Excelente</td>
+            </tr>
+            <tr>
+                <td><strong>MAE (Error Absoluto Medio)</strong></td>
+                <td>1.0209 t CO₂eq/ha/año</td>
+                <td>&lt; 1.50 t/ha/año</td>
+                <td style="color: #059669; font-weight: bold;">Aprobado</td>
+            </tr>
+            <tr>
+                <td><strong>F1-Score (10-Fold CV)</strong></td>
+                <td>0.7348</td>
+                <td>&gt; 0.70</td>
+                <td style="color: #059669; font-weight: bold;">Robusto</td>
+            </tr>
+            <tr>
+                <td><strong>ROC-AUC Score</strong></td>
+                <td>0.9626</td>
+                <td>&gt; 0.90</td>
+                <td style="color: #059669; font-weight: bold;">Sobresaliente</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="interp-box">
+        <div class="interp-title">📋 Interpretabilidad y operabilidad — Tabla de Métricas de Rendimiento</div>
+        <p><strong>1. ¿Qué contiene esta tabla?</strong> Parámetros de precisión estadística de regresión y clasificación del modelo ganador XGBoost validados en 10 pliegues estratificados.</p>
+        <p><strong>2. ¿Cómo se interpreta?</strong> R² representa la variabilidad de emisión neta explicada por el modelo (94.43%). El MAE cuantifica el error medio en toneladas de CO₂eq/ha/año.</p>
+        <p><strong>3. Hallazgos principales:</strong> La predicción biofísica del modelo replica las observaciones de campo con alto grado de acuerdo, permitiendo proyectar escenarios de restauración con mínima dispersión.</p>
+        <p><strong>4. Consideraciones y limitaciones:</strong> El modelo asume continuidad del suelo de turba hasta 2.5 m de profundidad. No considera perturbaciones por incendios catastróficos.</p>
+        <p><strong>5. Cómo utilizar esta tabla:</strong> Permite justificar técnicamente los cálculos de carbono para certificaciones MERESE y verificar la confiabilidad de las alertas tempranas de desecación.</p>
+    </div>
+
+    <h2>2. Ranking Multicriterio de Arquitecturas Evaluadas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Modelo</th>
+                <th>Composite Scientific Score</th>
+                <th>Estado Metodológico</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; font-weight: bold;">#1 XGBoost</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; font-family: monospace;">0.7593</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; color: #059669;">Validado 10-Fold</td>
+            </tr>
+            
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; font-weight: bold;">#2 Random Forest</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; font-family: monospace;">0.7543</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; color: #059669;">Validado 10-Fold</td>
+            </tr>
+            
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; font-weight: bold;">#3 SVM</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; font-family: monospace;">0.7273</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; color: #059669;">Validado 10-Fold</td>
+            </tr>
+            
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; font-weight: bold;">#4 Random Forest + MLP (Híbrido)</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; font-family: monospace;">0.6578</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; color: #059669;">Validado 10-Fold</td>
+            </tr>
+            
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; font-weight: bold;">#5 SVM + MLP (Híbrido)</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; font-family: monospace;">0.5544</td>
+                <td style="padding: 10px; border-bottom: 1px solid #e2e8f0; color: #059669;">Validado 10-Fold</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <div class="interp-box">
+        <div class="interp-title">📋 Interpretabilidad y operabilidad — Tabla de Ranking Multicriterio</div>
+        <p><strong>1. ¿Qué contiene esta tabla?</strong> Jerarquización cuantitativa de 5 familias de Machine Learning según el Composite Score.</p>
+        <p><strong>2. ¿Cómo se interpreta?</strong> Pondera métricas de error, capacidad de generalización en pliegues no vistos e interpretabilidad.</p>
+        <p><strong>3. Hallazgos principales:</strong> XGBoost superó consistentemente a modelos lineales y ensambles tradicionales.</p>
+        <p><strong>4. Consideraciones y limitaciones:</strong> El ranking está calibrado para la microcuenca Chirimayo; otras cuencas pueden requerir reponderación de hiperparámetros.</p>
+        <p><strong>5. Cómo utilizar esta tabla:</strong> Sirve como sustento científico en el capítulo de Selección y Validación de Modelos para publicaciones de impacto.</p>
+    </div>
+
+    <div class="footer">
+        Gemelo Digital de Turberas Chirimayo • Gobierno Regional de Cajamarca • Generado automáticamente en Modo Claro
+    </div>
+</body>
+</html>
+        

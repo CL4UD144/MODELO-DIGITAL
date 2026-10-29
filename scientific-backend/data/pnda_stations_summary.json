@@ -1,0 +1,1271 @@
+{
+  "stations": [
+    {
+      "id": "QUI-TAY-MEHM-02",
+      "name": "Estación Huaraz Quinuacocha (QUI-TAY-MEHM-02)",
+      "type": "Humedad de Suelo Multinivel (20, 60, 100 cm)",
+      "location": "Independencia, Huaraz, Ancash",
+      "recordsCount": 3920,
+      "dateRange": [
+        "2019-08-15",
+        "2023-08-31"
+      ],
+      "meanHumedad20cm": 11.88,
+      "meanHumedad60cm": 7.45,
+      "meanHumedad100cm": 10.45
+    },
+    {
+      "id": "CIC-MEHM-04",
+      "name": "Estación Catac Cátac (CIC-MEHM-04)",
+      "type": "Humedad de Suelo Multinivel (20, 60, 100 cm)",
+      "location": "Catac, Recuay, Ancash",
+      "recordsCount": 1614,
+      "dateRange": [
+        "2021-06-16",
+        "2023-08-31"
+      ],
+      "meanHumedad20cm": 15.39,
+      "meanHumedad60cm": 19.89,
+      "meanHumedad100cm": 24.79
+    },
+    {
+      "id": "CIC-MEHM-01",
+      "name": "Estación Meteorológica WatchDog (CIC-MEHM-01)",
+      "type": "Meteorología (Precipitación, Temp Promed/Min/Max)",
+      "location": "Catac, Recuay, Ancash",
+      "recordsCount": 1473,
+      "dateRange": [
+        "2019-08-20",
+        "2023-08-31"
+      ],
+      "meanPrecipitation": 2.06,
+      "meanTemperature": 7.49,
+      "minTemperature": -7.2,
+      "maxTemperature": 22.4
+    }
+  ],
+  "datasetProvenance": {
+    "realSensorData": {
+      "source": "PNDA Ancash (Estaciones QUI-TAY-MEHM-02, CIC-MEHM-04, CIC-MEHM-01)",
+      "location": "Quinuacocha & Catac, Región Ancash, Perú",
+      "variables": [
+        "soil_moisture_20cm",
+        "soil_moisture_60cm",
+        "soil_moisture_100cm",
+        "precip_mm",
+        "soil_temp"
+      ],
+      "recordsCount": 7007,
+      "status": "REAL_MEASURED"
+    },
+    "derivedHydrologicalData": {
+      "method": "Interpolación lineal de humedad superficial a profundidad de nivel freático (WTD)",
+      "variables": [
+        "wtd",
+        "ndvi"
+      ],
+      "status": "DERIVED_HYDROLOGICAL"
+    },
+    "simulatedScenarioData": {
+      "method": "Simulación estocástica Monte Carlo de escenarios de restauración e interpolación bio-física IPCC Tier 2",
+      "variables": [
+        "ditch_blocking_ratio",
+        "grazing_reduction",
+        "revegetation_ha",
+        "bulk_density",
+        "organic_matter",
+        "ph",
+        "co2_flux",
+        "ch4_flux",
+        "net_carbon_balance"
+      ],
+      "status": "SIMULATED_SCENARIO"
+    }
+  },
+  "timeSeries": [
+    {
+      "FECHA_STR": "2019-08-15",
+      "PRECIPITACION": 0.5,
+      "TEMPERATURA_PROMEDIO": 6.8,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-08-25",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.4,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-09-04",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.3,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-09-14",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 10.0,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-09-24",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.5,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-10-04",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.1,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-10-14",
+      "PRECIPITACION": 5.2,
+      "TEMPERATURA_PROMEDIO": 6.4,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-10-24",
+      "PRECIPITACION": 0.2,
+      "TEMPERATURA_PROMEDIO": 9.0,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-11-03",
+      "PRECIPITACION": 4.8,
+      "TEMPERATURA_PROMEDIO": 7.9,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-11-13",
+      "PRECIPITACION": 0.4,
+      "TEMPERATURA_PROMEDIO": 8.5,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-11-23",
+      "PRECIPITACION": 0.2,
+      "TEMPERATURA_PROMEDIO": 8.7,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-12-03",
+      "PRECIPITACION": 3.6,
+      "TEMPERATURA_PROMEDIO": 6.5,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-12-13",
+      "PRECIPITACION": 2.6,
+      "TEMPERATURA_PROMEDIO": 7.2,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2019-12-23",
+      "PRECIPITACION": 0.5,
+      "TEMPERATURA_PROMEDIO": 8.2,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-01-02",
+      "PRECIPITACION": 41.9,
+      "TEMPERATURA_PROMEDIO": 8.1,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-01-12",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 9.5,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-01-22",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.7,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-02-01",
+      "PRECIPITACION": 3.9,
+      "TEMPERATURA_PROMEDIO": 9.2,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-02-11",
+      "PRECIPITACION": 9.1,
+      "TEMPERATURA_PROMEDIO": 9.5,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-02-21",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 9.3,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-03-02",
+      "PRECIPITACION": 5.7,
+      "TEMPERATURA_PROMEDIO": 8.0,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-03-12",
+      "PRECIPITACION": 10.8,
+      "TEMPERATURA_PROMEDIO": 8.3,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-03-22",
+      "PRECIPITACION": 14.5,
+      "TEMPERATURA_PROMEDIO": 6.1,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-04-01",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.5,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-04-11",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.7,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-04-21",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.7,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-05-01",
+      "PRECIPITACION": 0.6,
+      "TEMPERATURA_PROMEDIO": 8.6,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-05-11",
+      "PRECIPITACION": 3.1,
+      "TEMPERATURA_PROMEDIO": 9.8,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-05-21",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.0,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-05-31",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.8,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-06-10",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 5.5,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-06-20",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.4,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-06-30",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 5.6,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-07-10",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.1,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-07-20",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.1,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-07-30",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 5.7,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-08-09",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.6,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-08-19",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.4,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-08-29",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.3,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-09-08",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.6,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-09-18",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.0,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-09-28",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.7,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-10-08",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 9.3,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-10-18",
+      "PRECIPITACION": 8.9,
+      "TEMPERATURA_PROMEDIO": 7.7,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-10-28",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.2,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-11-07",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.9,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-11-17",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.8,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-11-27",
+      "PRECIPITACION": 11.8,
+      "TEMPERATURA_PROMEDIO": 8.5,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-12-07",
+      "PRECIPITACION": 6.3,
+      "TEMPERATURA_PROMEDIO": 7.1,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-12-17",
+      "PRECIPITACION": 4.8,
+      "TEMPERATURA_PROMEDIO": 7.5,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2020-12-27",
+      "PRECIPITACION": 11.6,
+      "TEMPERATURA_PROMEDIO": 4.7,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-01-06",
+      "PRECIPITACION": 11.9,
+      "TEMPERATURA_PROMEDIO": 4.8,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-01-16",
+      "PRECIPITACION": 8.8,
+      "TEMPERATURA_PROMEDIO": 7.3,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-01-26",
+      "PRECIPITACION": 6.3,
+      "TEMPERATURA_PROMEDIO": 7.2,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-02-05",
+      "PRECIPITACION": 8.9,
+      "TEMPERATURA_PROMEDIO": 7.8,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-02-15",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.7,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-02-25",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 10.0,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-03-07",
+      "PRECIPITACION": 12.7,
+      "TEMPERATURA_PROMEDIO": 7.4,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-03-17",
+      "PRECIPITACION": 13.1,
+      "TEMPERATURA_PROMEDIO": 5.9,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-03-27",
+      "PRECIPITACION": 0.4,
+      "TEMPERATURA_PROMEDIO": 9.0,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-04-06",
+      "PRECIPITACION": 5.9,
+      "TEMPERATURA_PROMEDIO": 7.6,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-04-16",
+      "PRECIPITACION": 1.5,
+      "TEMPERATURA_PROMEDIO": 8.3,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-04-26",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.1,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-05-06",
+      "PRECIPITACION": 0.7,
+      "TEMPERATURA_PROMEDIO": 8.1,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-05-16",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.0,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-05-26",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.0,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-06-05",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.0,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-06-15",
+      "PRECIPITACION": 2.0,
+      "TEMPERATURA_PROMEDIO": 7.7,
+      "humedad_20cm_station_4": 28.75,
+      "humedad_60cm_station_4": 27.65,
+      "humedad_100cm_station_4": 25.9
+    },
+    {
+      "FECHA_STR": "2021-06-25",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 5.2,
+      "humedad_20cm_station_4": 29.799999999999997,
+      "humedad_60cm_station_4": 28.45,
+      "humedad_100cm_station_4": 26.599999999999998
+    },
+    {
+      "FECHA_STR": "2021-07-05",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 5.3,
+      "humedad_20cm_station_4": 29.85,
+      "humedad_60cm_station_4": 28.65,
+      "humedad_100cm_station_4": 27.1
+    },
+    {
+      "FECHA_STR": "2021-07-15",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.2,
+      "humedad_20cm_station_4": 29.5,
+      "humedad_60cm_station_4": 28.3,
+      "humedad_100cm_station_4": 26.8
+    },
+    {
+      "FECHA_STR": "2021-07-25",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 5.3,
+      "humedad_20cm_station_4": 29.15,
+      "humedad_60cm_station_4": 27.8,
+      "humedad_100cm_station_4": 26.599999999999998
+    },
+    {
+      "FECHA_STR": "2021-08-04",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.2,
+      "humedad_20cm_station_4": 29.200000000000003,
+      "humedad_60cm_station_4": 27.55,
+      "humedad_100cm_station_4": 26.85
+    },
+    {
+      "FECHA_STR": "2021-08-14",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.2,
+      "humedad_20cm_station_4": 29.25,
+      "humedad_60cm_station_4": 27.25,
+      "humedad_100cm_station_4": 27.1
+    },
+    {
+      "FECHA_STR": "2021-08-24",
+      "PRECIPITACION": 0.2,
+      "TEMPERATURA_PROMEDIO": 7.6,
+      "humedad_20cm_station_4": 31.9,
+      "humedad_60cm_station_4": 28.150000000000002,
+      "humedad_100cm_station_4": 27.75
+    },
+    {
+      "FECHA_STR": "2021-09-03",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.4,
+      "humedad_20cm_station_4": 34.05,
+      "humedad_60cm_station_4": 29.75,
+      "humedad_100cm_station_4": 27.1
+    },
+    {
+      "FECHA_STR": "2021-09-13",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.4,
+      "humedad_20cm_station_4": 34.9,
+      "humedad_60cm_station_4": 29.2,
+      "humedad_100cm_station_4": 26.9
+    },
+    {
+      "FECHA_STR": "2021-09-23",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.3,
+      "humedad_20cm_station_4": 32.775,
+      "humedad_60cm_station_4": 17.4,
+      "humedad_100cm_station_4": 25.1
+    },
+    {
+      "FECHA_STR": "2021-10-03",
+      "PRECIPITACION": 2.8,
+      "TEMPERATURA_PROMEDIO": 7.6,
+      "humedad_20cm_station_4": 4.85,
+      "humedad_60cm_station_4": 9.45,
+      "humedad_100cm_station_4": 25.45
+    },
+    {
+      "FECHA_STR": "2021-10-13",
+      "PRECIPITACION": 0.9,
+      "TEMPERATURA_PROMEDIO": 9.6,
+      "humedad_20cm_station_4": 11.4,
+      "humedad_60cm_station_4": 12.05,
+      "humedad_100cm_station_4": 25.25
+    },
+    {
+      "FECHA_STR": "2021-10-23",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.0,
+      "humedad_20cm_station_4": 14.65,
+      "humedad_60cm_station_4": 16.55,
+      "humedad_100cm_station_4": 25.4
+    },
+    {
+      "FECHA_STR": "2021-11-02",
+      "PRECIPITACION": 3.7,
+      "TEMPERATURA_PROMEDIO": 6.8,
+      "humedad_20cm_station_4": 12.0,
+      "humedad_60cm_station_4": 15.65,
+      "humedad_100cm_station_4": 25.900000000000002
+    },
+    {
+      "FECHA_STR": "2021-11-12",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.9,
+      "humedad_20cm_station_4": 13.600000000000001,
+      "humedad_60cm_station_4": 15.75,
+      "humedad_100cm_station_4": 26.150000000000002
+    },
+    {
+      "FECHA_STR": "2021-11-22",
+      "PRECIPITACION": 2.5,
+      "TEMPERATURA_PROMEDIO": 8.9,
+      "humedad_20cm_station_4": 11.05,
+      "humedad_60cm_station_4": 14.55,
+      "humedad_100cm_station_4": 26.7
+    },
+    {
+      "FECHA_STR": "2021-12-02",
+      "PRECIPITACION": 2.5,
+      "TEMPERATURA_PROMEDIO": 7.2,
+      "humedad_20cm_station_4": 17.8,
+      "humedad_60cm_station_4": 18.6,
+      "humedad_100cm_station_4": 31.25
+    },
+    {
+      "FECHA_STR": "2021-12-12",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.5,
+      "humedad_20cm_station_4": 19.15,
+      "humedad_60cm_station_4": 21.7,
+      "humedad_100cm_station_4": 50.4
+    },
+    {
+      "FECHA_STR": "2021-12-22",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.9,
+      "humedad_20cm_station_4": 14.899999999999999,
+      "humedad_60cm_station_4": 17.65,
+      "humedad_100cm_station_4": 32.900000000000006
+    },
+    {
+      "FECHA_STR": "2022-01-01",
+      "PRECIPITACION": 0.2,
+      "TEMPERATURA_PROMEDIO": 6.8,
+      "humedad_20cm_station_4": 14.85,
+      "humedad_60cm_station_4": 18.4,
+      "humedad_100cm_station_4": 34.05
+    },
+    {
+      "FECHA_STR": "2022-01-11",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.3,
+      "humedad_20cm_station_4": 13.15,
+      "humedad_60cm_station_4": 16.9,
+      "humedad_100cm_station_4": 32.2
+    },
+    {
+      "FECHA_STR": "2022-01-21",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.6,
+      "humedad_20cm_station_4": 15.700000000000001,
+      "humedad_60cm_station_4": 17.55,
+      "humedad_100cm_station_4": 26.85
+    },
+    {
+      "FECHA_STR": "2022-01-31",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.4,
+      "humedad_20cm_station_4": 17.25,
+      "humedad_60cm_station_4": 18.1,
+      "humedad_100cm_station_4": 33.45
+    },
+    {
+      "FECHA_STR": "2022-02-10",
+      "PRECIPITACION": 2.9,
+      "TEMPERATURA_PROMEDIO": 8.4,
+      "humedad_20cm_station_4": 21.45,
+      "humedad_60cm_station_4": 21.35,
+      "humedad_100cm_station_4": 34.5
+    },
+    {
+      "FECHA_STR": "2022-02-20",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.7,
+      "humedad_20cm_station_4": 23.1,
+      "humedad_60cm_station_4": 27.9,
+      "humedad_100cm_station_4": 48.05
+    },
+    {
+      "FECHA_STR": "2022-03-02",
+      "PRECIPITACION": 5.7,
+      "TEMPERATURA_PROMEDIO": 6.6,
+      "humedad_20cm_station_4": 34.75,
+      "humedad_60cm_station_4": 31.6,
+      "humedad_100cm_station_4": 48.8
+    },
+    {
+      "FECHA_STR": "2022-03-12",
+      "PRECIPITACION": 13.7,
+      "TEMPERATURA_PROMEDIO": 7.3,
+      "humedad_20cm_station_4": 33.7,
+      "humedad_60cm_station_4": 31.75,
+      "humedad_100cm_station_4": 48.25
+    },
+    {
+      "FECHA_STR": "2022-03-22",
+      "PRECIPITACION": 2.4,
+      "TEMPERATURA_PROMEDIO": 7.0,
+      "humedad_20cm_station_4": 21.25,
+      "humedad_60cm_station_4": 22.55,
+      "humedad_100cm_station_4": 35.85
+    },
+    {
+      "FECHA_STR": "2022-04-01",
+      "PRECIPITACION": 5.4,
+      "TEMPERATURA_PROMEDIO": 6.7,
+      "humedad_20cm_station_4": 30.0,
+      "humedad_60cm_station_4": 29.15,
+      "humedad_100cm_station_4": 49.0
+    },
+    {
+      "FECHA_STR": "2022-04-11",
+      "PRECIPITACION": 0.9,
+      "TEMPERATURA_PROMEDIO": 7.3,
+      "humedad_20cm_station_4": 22.1,
+      "humedad_60cm_station_4": 21.799999999999997,
+      "humedad_100cm_station_4": 35.8
+    },
+    {
+      "FECHA_STR": "2022-04-21",
+      "PRECIPITACION": 1.2,
+      "TEMPERATURA_PROMEDIO": 7.4,
+      "humedad_20cm_station_4": 18.2,
+      "humedad_60cm_station_4": 19.5,
+      "humedad_100cm_station_4": 33.150000000000006
+    },
+    {
+      "FECHA_STR": "2022-05-01",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.0,
+      "humedad_20cm_station_4": 15.25,
+      "humedad_60cm_station_4": 19.25,
+      "humedad_100cm_station_4": 31.9
+    },
+    {
+      "FECHA_STR": "2022-05-11",
+      "PRECIPITACION": 6.7,
+      "TEMPERATURA_PROMEDIO": 6.7,
+      "humedad_20cm_station_4": 12.0,
+      "humedad_60cm_station_4": 18.15,
+      "humedad_100cm_station_4": 31.75
+    },
+    {
+      "FECHA_STR": "2022-05-21",
+      "PRECIPITACION": 0.2,
+      "TEMPERATURA_PROMEDIO": 7.9,
+      "humedad_20cm_station_4": 16.95,
+      "humedad_60cm_station_4": 20.549999999999997,
+      "humedad_100cm_station_4": 35.0
+    },
+    {
+      "FECHA_STR": "2022-05-31",
+      "PRECIPITACION": 0.7,
+      "TEMPERATURA_PROMEDIO": 5.4,
+      "humedad_20cm_station_4": 13.05,
+      "humedad_60cm_station_4": 19.15,
+      "humedad_100cm_station_4": 32.4
+    },
+    {
+      "FECHA_STR": "2022-06-10",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 5.8,
+      "humedad_20cm_station_4": 10.350000000000001,
+      "humedad_60cm_station_4": 19.75,
+      "humedad_100cm_station_4": 31.5
+    },
+    {
+      "FECHA_STR": "2022-06-20",
+      "PRECIPITACION": 0.7,
+      "TEMPERATURA_PROMEDIO": 6.0,
+      "humedad_20cm_station_4": 6.0,
+      "humedad_60cm_station_4": 19.45,
+      "humedad_100cm_station_4": 31.15
+    },
+    {
+      "FECHA_STR": "2022-06-30",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 5.8,
+      "humedad_20cm_station_4": 4.6,
+      "humedad_60cm_station_4": 18.15,
+      "humedad_100cm_station_4": 30.35
+    },
+    {
+      "FECHA_STR": "2022-07-10",
+      "PRECIPITACION": 2.5,
+      "TEMPERATURA_PROMEDIO": 6.4,
+      "humedad_20cm_station_4": 4.15,
+      "humedad_60cm_station_4": 17.5,
+      "humedad_100cm_station_4": 30.15
+    },
+    {
+      "FECHA_STR": "2022-07-20",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.0,
+      "humedad_20cm_station_4": 4.1,
+      "humedad_60cm_station_4": 18.0,
+      "humedad_100cm_station_4": 29.849999999999998
+    },
+    {
+      "FECHA_STR": "2022-07-30",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.6,
+      "humedad_20cm_station_4": 4.55,
+      "humedad_60cm_station_4": 17.55,
+      "humedad_100cm_station_4": 28.25
+    },
+    {
+      "FECHA_STR": "2022-08-09",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.7,
+      "humedad_20cm_station_4": 4.9,
+      "humedad_60cm_station_4": 16.5,
+      "humedad_100cm_station_4": 28.7
+    },
+    {
+      "FECHA_STR": "2022-08-19",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.6,
+      "humedad_20cm_station_4": 5.05,
+      "humedad_60cm_station_4": 15.7,
+      "humedad_100cm_station_4": 28.5
+    },
+    {
+      "FECHA_STR": "2022-08-29",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.3,
+      "humedad_20cm_station_4": 4.9,
+      "humedad_60cm_station_4": 14.350000000000001,
+      "humedad_100cm_station_4": 28.700000000000003
+    },
+    {
+      "FECHA_STR": "2022-09-08",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.5,
+      "humedad_20cm_station_4": 4.85,
+      "humedad_60cm_station_4": 13.55,
+      "humedad_100cm_station_4": 28.2
+    },
+    {
+      "FECHA_STR": "2022-09-18",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.0,
+      "humedad_20cm_station_4": 5.0,
+      "humedad_60cm_station_4": 12.75,
+      "humedad_100cm_station_4": 28.1
+    },
+    {
+      "FECHA_STR": "2022-09-28",
+      "PRECIPITACION": 0.2,
+      "TEMPERATURA_PROMEDIO": 7.4,
+      "humedad_20cm_station_4": 5.1,
+      "humedad_60cm_station_4": 14.7,
+      "humedad_100cm_station_4": 28.0
+    },
+    {
+      "FECHA_STR": "2022-10-08",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.6,
+      "humedad_20cm_station_4": 5.5,
+      "humedad_60cm_station_4": 13.2,
+      "humedad_100cm_station_4": 27.95
+    },
+    {
+      "FECHA_STR": "2022-10-18",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.0,
+      "humedad_20cm_station_4": 5.699999999999999,
+      "humedad_60cm_station_4": 15.9,
+      "humedad_100cm_station_4": 3.1
+    },
+    {
+      "FECHA_STR": "2022-10-28",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.4,
+      "humedad_20cm_station_4": 5.45,
+      "humedad_60cm_station_4": 11.100000000000001,
+      "humedad_100cm_station_4": 3.05
+    },
+    {
+      "FECHA_STR": "2022-11-07",
+      "PRECIPITACION": 0.9,
+      "TEMPERATURA_PROMEDIO": 7.6,
+      "humedad_20cm_station_4": 4.85,
+      "humedad_60cm_station_4": 9.0,
+      "humedad_100cm_station_4": 9.45
+    },
+    {
+      "FECHA_STR": "2022-11-17",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.3,
+      "humedad_20cm_station_4": 4.55,
+      "humedad_60cm_station_4": 8.25,
+      "humedad_100cm_station_4": 6.85
+    },
+    {
+      "FECHA_STR": "2022-11-27",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 8.7,
+      "humedad_20cm_station_4": 4.5,
+      "humedad_60cm_station_4": 8.15,
+      "humedad_100cm_station_4": 6.199999999999999
+    },
+    {
+      "FECHA_STR": "2022-12-07",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.5,
+      "humedad_20cm_station_4": 4.45,
+      "humedad_60cm_station_4": 8.75,
+      "humedad_100cm_station_4": 6.0
+    },
+    {
+      "FECHA_STR": "2022-12-17",
+      "PRECIPITACION": 0.2,
+      "TEMPERATURA_PROMEDIO": 7.4,
+      "humedad_20cm_station_4": 5.25,
+      "humedad_60cm_station_4": 14.850000000000001,
+      "humedad_100cm_station_4": 6.65
+    },
+    {
+      "FECHA_STR": "2022-12-27",
+      "PRECIPITACION": 0.8,
+      "TEMPERATURA_PROMEDIO": 7.2,
+      "humedad_20cm_station_4": 6.75,
+      "humedad_60cm_station_4": 16.65,
+      "humedad_100cm_station_4": 8.1
+    },
+    {
+      "FECHA_STR": "2023-01-06",
+      "PRECIPITACION": 4.8,
+      "TEMPERATURA_PROMEDIO": 5.3,
+      "humedad_20cm_station_4": 9.3,
+      "humedad_60cm_station_4": 15.45,
+      "humedad_100cm_station_4": 8.85
+    },
+    {
+      "FECHA_STR": "2023-01-16",
+      "PRECIPITACION": 0.6,
+      "TEMPERATURA_PROMEDIO": 7.2,
+      "humedad_20cm_station_4": 13.8,
+      "humedad_60cm_station_4": 19.35,
+      "humedad_100cm_station_4": 17.25
+    },
+    {
+      "FECHA_STR": "2023-01-26",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.8,
+      "humedad_20cm_station_4": 15.6,
+      "humedad_60cm_station_4": 19.7,
+      "humedad_100cm_station_4": 21.15
+    },
+    {
+      "FECHA_STR": "2023-02-05",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 9.0,
+      "humedad_20cm_station_4": 17.45,
+      "humedad_60cm_station_4": 23.700000000000003,
+      "humedad_100cm_station_4": 34.25
+    },
+    {
+      "FECHA_STR": "2023-02-15",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.5,
+      "humedad_20cm_station_4": 18.7,
+      "humedad_60cm_station_4": 30.55,
+      "humedad_100cm_station_4": 49.7
+    },
+    {
+      "FECHA_STR": "2023-02-25",
+      "PRECIPITACION": 2.0,
+      "TEMPERATURA_PROMEDIO": 7.9,
+      "humedad_20cm_station_4": 18.75,
+      "humedad_60cm_station_4": 27.25,
+      "humedad_100cm_station_4": 48.45
+    },
+    {
+      "FECHA_STR": "2023-03-07",
+      "PRECIPITACION": 10.0,
+      "TEMPERATURA_PROMEDIO": 8.8,
+      "humedad_20cm_station_4": 19.8,
+      "humedad_60cm_station_4": 23.950000000000003,
+      "humedad_100cm_station_4": 37.8
+    },
+    {
+      "FECHA_STR": "2023-03-17",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.1,
+      "humedad_20cm_station_4": 41.05,
+      "humedad_60cm_station_4": 37.25,
+      "humedad_100cm_station_4": 50.35
+    },
+    {
+      "FECHA_STR": "2023-03-27",
+      "PRECIPITACION": 4.7,
+      "TEMPERATURA_PROMEDIO": 8.5,
+      "humedad_20cm_station_4": 31.35,
+      "humedad_60cm_station_4": 33.7,
+      "humedad_100cm_station_4": 25.4
+    },
+    {
+      "FECHA_STR": "2023-04-06",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.4,
+      "humedad_20cm_station_4": 23.5,
+      "humedad_60cm_station_4": 25.1,
+      "humedad_100cm_station_4": 9.25
+    },
+    {
+      "FECHA_STR": "2023-04-16",
+      "PRECIPITACION": 13.5,
+      "TEMPERATURA_PROMEDIO": 7.6,
+      "humedad_20cm_station_4": 39.7,
+      "humedad_60cm_station_4": 36.65,
+      "humedad_100cm_station_4": 25.45
+    },
+    {
+      "FECHA_STR": "2023-04-26",
+      "PRECIPITACION": 0.9,
+      "TEMPERATURA_PROMEDIO": 7.3,
+      "humedad_20cm_station_4": 27.95,
+      "humedad_60cm_station_4": 28.05,
+      "humedad_100cm_station_4": 16.35
+    },
+    {
+      "FECHA_STR": "2023-05-06",
+      "PRECIPITACION": 0.8,
+      "TEMPERATURA_PROMEDIO": 9.4,
+      "humedad_20cm_station_4": 20.1,
+      "humedad_60cm_station_4": 24.8,
+      "humedad_100cm_station_4": 8.1
+    },
+    {
+      "FECHA_STR": "2023-05-16",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.8,
+      "humedad_20cm_station_4": 13.0,
+      "humedad_60cm_station_4": 23.85,
+      "humedad_100cm_station_4": 7.05
+    },
+    {
+      "FECHA_STR": "2023-05-26",
+      "PRECIPITACION": 4.5,
+      "TEMPERATURA_PROMEDIO": 8.1,
+      "humedad_20cm_station_4": 7.699999999999999,
+      "humedad_60cm_station_4": 22.1,
+      "humedad_100cm_station_4": 6.35
+    },
+    {
+      "FECHA_STR": "2023-06-05",
+      "PRECIPITACION": 0.2,
+      "TEMPERATURA_PROMEDIO": 6.8,
+      "humedad_20cm_station_4": 6.75,
+      "humedad_60cm_station_4": 19.65,
+      "humedad_100cm_station_4": 5.95
+    },
+    {
+      "FECHA_STR": "2023-06-15",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.7,
+      "humedad_20cm_station_4": 5.800000000000001,
+      "humedad_60cm_station_4": 16.55,
+      "humedad_100cm_station_4": 5.35
+    },
+    {
+      "FECHA_STR": "2023-06-25",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.0,
+      "humedad_20cm_station_4": 5.35,
+      "humedad_60cm_station_4": 14.5,
+      "humedad_100cm_station_4": 4.95
+    },
+    {
+      "FECHA_STR": "2023-07-05",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.6,
+      "humedad_20cm_station_4": 5.2,
+      "humedad_60cm_station_4": 13.0,
+      "humedad_100cm_station_4": 4.2
+    },
+    {
+      "FECHA_STR": "2023-07-15",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 5.8,
+      "humedad_20cm_station_4": 5.15,
+      "humedad_60cm_station_4": 12.600000000000001,
+      "humedad_100cm_station_4": 3.65
+    },
+    {
+      "FECHA_STR": "2023-07-25",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 6.0,
+      "humedad_20cm_station_4": 5.2,
+      "humedad_60cm_station_4": 12.0,
+      "humedad_100cm_station_4": 5.2
+    },
+    {
+      "FECHA_STR": "2023-08-04",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.2,
+      "humedad_20cm_station_4": 4.95,
+      "humedad_60cm_station_4": 11.3,
+      "humedad_100cm_station_4": 12.600000000000001
+    },
+    {
+      "FECHA_STR": "2023-08-14",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.9,
+      "humedad_20cm_station_4": 4.8,
+      "humedad_60cm_station_4": 11.05,
+      "humedad_100cm_station_4": 10.05
+    },
+    {
+      "FECHA_STR": "2023-08-24",
+      "PRECIPITACION": 0.0,
+      "TEMPERATURA_PROMEDIO": 7.4,
+      "humedad_20cm_station_4": 4.65,
+      "humedad_60cm_station_4": 11.149999999999999,
+      "humedad_100cm_station_4": 8.65
+    }
+  ]
+}

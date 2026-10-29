@@ -1,0 +1,75 @@
+{
+    "Random Forest": {
+        "method": "RandomizedSearchCV (5-Fold CV Interna)",
+        "scoring": "f1",
+        "search_space": {
+            "n_estimators": "[50, 100, 150, 200]",
+            "max_depth": "[4, 6, 8, 12, None]"
+        },
+        "best_hyperparameters": {
+            "n_estimators": 50,
+            "max_depth": 4
+        },
+        "best_internal_cv_f1": 0.7419
+    },
+    "SVM": {
+        "method": "RandomizedSearchCV (5-Fold CV Interna)",
+        "scoring": "f1",
+        "search_space": {
+            "C": "[0.5, 1.0, 1.5, 2.0, 5.0]",
+            "kernel": "['rbf', 'linear']"
+        },
+        "best_hyperparameters": {
+            "kernel": "rbf",
+            "C": 5.0
+        },
+        "best_internal_cv_f1": 0.7381
+    },
+    "XGBoost": {
+        "method": "RandomizedSearchCV (5-Fold CV Interna)",
+        "scoring": "f1",
+        "search_space": {
+            "n_estimators": "[50, 80, 120, 150]",
+            "max_depth": "[3, 5, 7]",
+            "learning_rate": "[0.01, 0.05, 0.1]"
+        },
+        "best_hyperparameters": {
+            "n_estimators": 150,
+            "max_depth": 7,
+            "learning_rate": 0.1
+        },
+        "best_internal_cv_f1": 0.7216
+    },
+    "Random Forest + MLP (Híbrido)": {
+        "method": "RandomizedSearchCV (5-Fold CV Interna)",
+        "scoring": "f1",
+        "search_space": {
+            "rf_n_estimators": "[50, 100, 150]",
+            "mlp_hidden_layer_sizes": "[(32, 16), (64, 32)]"
+        },
+        "best_hyperparameters": {
+            "rf_n_estimators": 50,
+            "mlp_hidden_layer_sizes": [
+                32,
+                16
+            ]
+        },
+        "best_internal_cv_f1": 0.5484
+    },
+    "SVM + MLP (Híbrido)": {
+        "method": "RandomizedSearchCV (5-Fold CV Interna)",
+        "scoring": "f1",
+        "search_space": {
+            "svm_C": "[0.8, 1.2, 2.0]",
+            "mlp_hidden_layer_sizes": "[(32, 16), (64, 32)]"
+        },
+        "best_hyperparameters": {
+            "svm_C": 0.8,
+            "mlp_hidden_layer_sizes": [
+                32,
+                16
+            ]
+        },
+        "best_internal_cv_f1": 0.7223
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "model_name": "XGBoost",
+    "model_type": "XGBoostModelWrapper",
+    "status": "MODELO SELECCIONADO Y OPTIMIZADO",
+    "selection_date": "2026-09-28 17:13:11",
+    "dataset_version": "Chirimayo_v2.0_PNDA_Real",
+    "features_used": [
+        "wtd",
+        "soil_temp",
+        "precip_mm",
+        "ditch_blocking_ratio",
+        "grazing_reduction",
+        "revegetation_ha",
+        "ndvi",
+        "bulk_density",
+        "organic_matter",
+        "ph"
+    ],
+    "calibration_method": "Platt Scaling (Sigmoid)",
+    "hyperparameter_tuning_method": "RandomizedSearchCV (5-Fold CV)",
+    "composite_rank_score": 0.7593,
+    "hyperparameters": {
+        "n_estimators": 150,
+        "max_depth": 7,
+        "learning_rate": 0.1
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "features": [
+        "wtd",
+        "soil_temp",
+        "precip_mm",
+        "ditch_blocking_ratio",
+        "grazing_reduction",
+        "revegetation_ha",
+        "ndvi",
+        "bulk_density",
+        "organic_matter",
+        "ph"
+    ],
+    "feature_importance_ranking": [
+        {
+            "feature": "wtd",
+            "importance": 0.38,
+            "description": "Profundidad del nivel freático"
+        },
+        {
+            "feature": "soil_temp",
+            "importance": 0.22,
+            "description": "Temperatura edáfica"
+        },
+        {
+            "feature": "ditch_blocking_ratio",
+            "importance": 0.15,
+            "description": "Zanjas taponadas"
+        },
+        {
+            "feature": "grazing_reduction",
+            "importance": 0.12,
+            "description": "Reducción de carga alpaquera"
+        },
+        {
+            "feature": "revegetation_ha",
+            "importance": 0.08,
+            "description": "Área de Distichia restituidas"
+        },
+        {
+            "feature": "ndvi",
+            "importance": 0.05,
+            "description": "Salud foliar por teledetección"
+        }
+    ]
+}

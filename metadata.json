@@ -1,0 +1,6 @@
+{
+  "name": "Gemelo Digital Turberas Chirimayo",
+  "description": "Plataforma de Gemelo Digital 3D para la simulación de restauración hidrológica y balance de carbono CO₂-CH₄ en turberas altoandinas de la microcuenca Chirimayo, Cajamarca, Perú.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
